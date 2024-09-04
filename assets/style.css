@@ -1,0 +1,301 @@
+:root {
+  --color: rgb(24,24,122);
+  --orange: rgb(231, 81, 81);
+  --light: rgb(222, 250, 237);
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body style */
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color);
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover{
+  color: var(--orange);
+  text-shadow:var(--orange);
+  transition:  ease 0.8s;
+}
+
+/* Burger Menu */
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+  }
+
+  .nav-links li {
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .burger {
+      display: flex;
+  }
+}
+
+
+
+/* Burger Animation */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-active {
+  display: flex;
+}
+
+
+
+
+/* ALL PAGE STYLING */
+
+h1{
+  text-align: center;
+  justify-content: center;
+}
+
+
+/* HOME PAGE STYLE*/
+
+.home-main   {
+  background-color: var(--color);
+  border-radius: 0px 0  200px 0px;
+  height: 90vh;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-main img{
+  width: 40vw;
+}
+
+.home-main-left{
+  width: 40vw;
+}
+.head{
+  font-size: 40px;
+  font-weight: 600;
+  word-spacing: normal;
+  text-align: center;
+  padding-top: 90px;
+}
+
+
+.sub-head{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.main-button{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px;
+}
+
+.btn-contact{
+  padding: 15px 40px;
+  background-color:var(--color) ;
+  border: none;
+  border: solid white 1px;
+  color: white;
+  font-size: 17px;
+}
+
+.btn-contact:hover{
+  background-color: var(--orange);
+  transition: ease-out 1s;
+}
+
+.btn-service{
+  padding: 15px 40px;
+  background-color:var(--color) ;
+  border: none;
+  border: solid var(--orange) 1px;
+  color: white;
+  background-color: var(--orange);
+  font-size: 17px;
+}
+
+.btn-service:hover{
+  background-color:var(--color) ;
+  transition: ease-out 1s;
+
+}
+
+/* SERVICES PAGE STYLING */
+.service-main{
+  color: black;
+  margin-top:50px ;
+  background-color: var(--light);
+}
+
+.big-text{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px 0px;
+
+}
+
+.cart-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  
+}
+
+.cart{
+  width: 25vw;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+h3{
+  margin-top: 10px;
+}
+
+.cart-text{
+  margin-top: 20px;
+}
+
+.cart-point{
+  display: flex;
+  align-items: center;
+}
+
+.cart-point p{
+  border: 1.5px solid var(--orange);
+  width: 14px;
+  margin: 10px;
+}
+
+/* ABOUT PAGE */
+
+.about{
+  margin-top: 80px;
+}
+.about-main{
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-main img{
+  height: 60vh;
+}
+
+.about-right{
+  width: 35vw;
+}
+
+.about-right p{
+  margin: 10px 0px;
+}
+
+.about-text{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  margin: 15px 0px;
+
+}
+
+
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 768px){
+  .home-main{
+  height: auto;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  width: auto;
+  }
+
+  .home-main-left{
+    width: 90vw;
+  }
+
+  .home-main img{
+    padding-bottom: 25px;
+    width: 50vw;
+  }
+}
