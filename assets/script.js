@@ -15,42 +15,26 @@ burger.addEventListener('click', () => {
 });
 
 
-// === HOME PAGE ===
-// document.getElementById("nav-home").addEventListener('click',function(){
-//     document.querySelector('.home').style.display='block';
-//     document.querySelector('.services').style.display='none';
-//     document.querySelector('.about').style.display='none';
-//     document.querySelector('.contact').style.display='none';
 
-//  })
 
- document.querySelector('.btn-contact').addEventListener('click',function(){
-    document.querySelector('.services').scrollIntoView({ behavior: 'smooth' });
- })
 //  === SERVICES PAGE === 
 
-// document.getElementById("nav-services").addEventListener('click',function(){
-//     document.querySelector('.home').style.display='none';
-//     document.querySelector('.services').style.display='block';
-//     document.querySelector('.about').style.display='none';
-//     document.querySelector('.contact').style.display='none';
-//  })
+document.getElementById("nav-services").addEventListener("click", function() {
+    // Redirect to section 2
+    document.querySelector(".services").scrollIntoView({ behavior: "smooth" });
+});
 
 
 //   === ABOUT PAGE ===
 
-// document.getElementById("nav-about").addEventListener('click',function(){
-//     document.querySelector('.home').style.display='none';
-//     document.querySelector('.services').style.display='none';
-//     document.querySelector('.about').style.display='block';
-//     document.querySelector('.contact').style.display='none';
-//  })
+document.getElementById("nav-about").addEventListener("click", function() {
+    // Redirect to section 2
+    document.querySelector(".about").scrollIntoView({ behavior: "smooth" });
+});
 
 //  === CONTACT PAGE === 
-// document.getElementById("nav-contact").addEventListener('click',function(){
-//     document.querySelector('.home').style.display='none';
-//     document.querySelector('.services').style.display='none';
-//     document.querySelector('.about').style.display='none';
-//     document.querySelector('.contact').style.display='block';
-//  })
 
+document.getElementById("nav-contact").addEventListener("click", function() {
+    // Redirect to section 2
+    document.querySelector(".contact").scrollIntoView({ behavior: "smooth" });
+});
