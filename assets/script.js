@@ -35,6 +35,14 @@ document.getElementById("nav-about").addEventListener("click", function() {
 //  === CONTACT PAGE === 
 
 document.getElementById("nav-contact").addEventListener("click", function() {
-    // Redirect to section 2
+    // Redirect to contact section
     document.querySelector(".contact").scrollIntoView({ behavior: "smooth" });
+});
+
+
+//  === WORK PAGE === 
+
+document.getElementById("nav-work").addEventListener("click",function(){
+    // Redirect to work section 
+    document.querySelector(".work").scrollIntoView({behavior:"smooth"});
 });
