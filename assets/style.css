@@ -328,12 +328,11 @@ h3{
 .contact-main{
   text-align: center;
   margin: 40px;
-
 }
 
 form{
   width: 60vw;
-  background-color: aqua;
+  background-color: var(--orange);
   margin: auto;
   display: flex;
   justify-content: center;
@@ -383,6 +382,39 @@ form button{
   margin-right:8px ;
 }
 
+
+
+/* === FOOTER === */
+
+footer{
+  background-color: var(--color);
+  color: white;
+  padding: 90px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+footer a{
+  color: white;
+}
+
+.footer-box{
+  width: 25vw;
+}
+
+
+.footer-box div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px ;
+  margin-top: 20px;
+}
+
+.footer-box div a{
+  text-decoration: none;
+}
 
 /* media query */
 
@@ -438,4 +470,49 @@ form button{
     width: 80vw;
     margin-top: 20px;
   }
+
+  /* === CONTACT US === */
+
+  .contact-main{
+    text-align: center;
+    margin: 5px;
+  }
+
+  form{
+    width: 90vw;
+    margin: auto;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .input-main{
+    padding: 0;
+    width: 70vw;
+  }
+  .select-services{
+    width: 70vw;
+  }
+
+  form button{
+    width: 70vw;
+  }
+
+  /*  === FOOTER === */
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .footer-box{
+    width: 60vw;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
 }
