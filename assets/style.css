@@ -333,6 +333,7 @@ h3{
 form{
   width: 60vw;
   background-color: var(--orange);
+  border-radius: 9px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -376,13 +377,21 @@ form button{
   width: 30vw;
   margin: auto;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 #checkbox{
   margin-right:8px ;
 }
 
+select {
+  padding: 10px;
+  width: 70vw;
+}
 
+option{
+  width: 40vw;
+}
 
 /* === FOOTER === */
 
@@ -486,7 +495,6 @@ footer a{
   }
 
   .input-main{
-    padding: 0;
     width: 70vw;
   }
   .select-services{
@@ -508,8 +516,9 @@ footer a{
   }
 
   .footer-box{
-    width: 60vw;
+    width: 70vw;
     margin-top: 20px;
+    margin: auto;
     justify-content: center;
     align-items: center;
   }
