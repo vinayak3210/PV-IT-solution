@@ -24,6 +24,9 @@ document.getElementById("nav-services").addEventListener("click", function() {
     document.querySelector(".services").scrollIntoView({ behavior: "smooth" });
 });
 
+document.getElementById("btn-service").addEventListener('click',function(){
+    document.querySelector(".services").scrollIntoView({ behavior: "smooth" });
+})
 
 //   === ABOUT PAGE ===
 
@@ -35,6 +38,10 @@ document.getElementById("nav-about").addEventListener("click", function() {
 //  === CONTACT PAGE === 
 
 document.getElementById("nav-contact").addEventListener("click", function() {
+    // Redirect to contact section
+    document.querySelector(".contact").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("btn-contact").addEventListener("click", function() {
     // Redirect to contact section
     document.querySelector(".contact").scrollIntoView({ behavior: "smooth" });
 });

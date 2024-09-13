@@ -160,7 +160,7 @@ h1{
   margin: 50px;
 }
 
-.btn-contact{
+#btn-contact{
   padding: 12px 40px;
   background-color:var(--color) ;
   border: none;
@@ -169,12 +169,12 @@ h1{
   font-size: 17px;
 }
 
-.btn-contact:hover{
+#btn-contact:hover{
   background-color: var(--orange);
   transition: ease-out 1s;
 }
 
-.btn-service{
+#btn-service{
   padding: 12px 40px;
   background-color:var(--color) ;
   border: none;
@@ -184,7 +184,7 @@ h1{
   font-size: 17px;
 }
 
-.btn-service:hover{
+#btn-service:hover{
   background-color:var(--color) ;
   transition: ease-out 1s;
 
@@ -340,6 +340,7 @@ form{
   flex-direction: column;
   gap: 10px;
   padding: 10px 0;
+  /* color: var(--light); */
 }
 
 .input-main{  
